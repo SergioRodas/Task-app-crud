@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+.env_local
+.env_staging
+.env_prod
+.DS_Store
+launch.json
+data/*.xml
+package-lock.json
+yarn.lock
