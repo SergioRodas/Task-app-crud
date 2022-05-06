@@ -1,9 +1,9 @@
-const express = require('express');
+import express from 'express';
 
 const app = express();
-const routes = require('./routes/index.routes');
+import routes from './routes/index.routes';
 
-require('./database');
+import './database';
 
 app.use(routes);
 
