@@ -1,6 +1,6 @@
-import { schema, model } from 'mongoose';
+import { Schema, model } from 'mongoose';
 
-const noteSchema = new schema ({
+const schema = new Schema ({
     title: {
         type: String,
         required: true,
@@ -15,4 +15,4 @@ const noteSchema = new schema ({
     versionKey: false
 });
 
-export default model('Note', noteSchema);
+export default model('Note', schema);

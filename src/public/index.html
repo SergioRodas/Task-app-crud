@@ -7,9 +7,13 @@
     <title>Sockets app</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <form id="noteForm">
+        <input id="title" type="text">
+        <textarea id="description" rows="10"></textarea>
+        <button>Send</button>
+    </form>
 
     <script src="/socket.io/socket.io.js"></script>
-    <script src="./main.js"></script>
+    <script src="./main.js" type="module"></script>
 </body>
 </html>
