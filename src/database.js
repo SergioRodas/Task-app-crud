@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
+import { connect } from 'mongoose';
 
-mongoose.connect('mongodb://mongo/mydatabase')
-    .then(db => console.log('DB is connected to ', db.connection.host))
+connect('mongodb://mongo/mydatabase')
+    .then(db => console.log('DB is connected to', db.connection.host))
     .catch(err => console.error(err));
