@@ -1,5 +1,13 @@
 import { connect } from 'mongoose';
+import { MONGODB_URI } from './config';
 
-connect('mongodb://mongo/mydatabase')
-    .then(db => console.log('DB is connected to', db.connection.host))
-    .catch(err => console.error(err));
+
+export const connectDB = async () => {
+    try {
+        const db = await connect(MONGODB_URI);
+        console.log('DB is connected to', db.connection.host)
+    } catch (error) {
+        console.error(error);
+    }
+
+}

@@ -1,6 +1,6 @@
 import { schema, model } from 'mongoose';
 
-const taskSchema = new schema ({
+const noteSchema = new schema ({
     title: {
         type: String,
         required: true,
@@ -9,15 +9,10 @@ const taskSchema = new schema ({
     },
     description: {
         type: String,
-        required: true
-    },
-    done: {
-        type: Boolean,
-        default: false
-    },
+    }
 }, {
     timestamp: true,
     versionKey: false
 });
 
-export default model('Task', taskSchema);
+export default model('Note', noteSchema);
