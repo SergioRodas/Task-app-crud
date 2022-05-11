@@ -8,10 +8,20 @@
 </head>
 <body>
     <form id="noteForm">
-        <input id="title" type="text">
-        <textarea id="description" rows="10"></textarea>
+        <label for="title">Title</label>
+        <div>
+            <input id="title" type="text">
+        </div>
+        <label for="description">Description</label>
+        <div>            
+            <textarea id="description" rows="10"></textarea>
+        </div>
         <button>Send</button>
     </form>
+
+    <ul id="notes">
+
+    </ul>
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="./main.js" type="module"></script>
